@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{c5220525-d726-4f79-93c7-e41a1cbd9bb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Global">
+      <UniqueIdentifier>{de35fa17-fb75-4652-856f-58ba3fad2d6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Global\Define">
+      <UniqueIdentifier>{78bebd29-4c49-4668-8951-2074ef0e7f09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_03 %28스택%29">
+      <UniqueIdentifier>{f90c5b1e-fd2d-4cb7-b7d6-7670a6497a8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Global\Utility">
+      <UniqueIdentifier>{7ec6d6e5-d548-4b53-8a27-e84856ea556a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Global\Utility\Structure">
+      <UniqueIdentifier>{bcf4e762-f2c1-4554-97c1-689a6042d3c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_01 %28배열 리스트%29">
+      <UniqueIdentifier>{0fd82d7d-4815-44b0-94d8-f28afd0499de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_02 %28연결 리스트%29">
+      <UniqueIdentifier>{e24c1ac6-cece-42b7-bfe3-c11eb1c179f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_04 %28큐%29">
+      <UniqueIdentifier>{51d62e5e-3dab-4b14-a229-da278de26a5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_05 %28해시 테이블%29">
+      <UniqueIdentifier>{07ba1683-5278-43a0-87ab-8c8b7fbec193}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Classes\Global\Define\KGDefine.h">
+      <Filter>Classes\Global\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_03\Example_03.h">
+      <Filter>Classes\Example_03 %28스택%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_01\Example_01.h">
+      <Filter>Classes\Example_01 %28배열 리스트%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_02\Example_02.h">
+      <Filter>Classes\Example_02 %28연결 리스트%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_04\Example_04.h">
+      <Filter>Classes\Example_04 %28큐%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_05\Example_05.h">
+      <Filter>Classes\Example_05 %28해시 테이블%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Global\Utility\Structure\CHashTable.h">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Global\Utility\Structure\CLinkedList.h">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Classes\Example.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_03\Example_03.cpp">
+      <Filter>Classes\Example_03 %28스택%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_01\Example_01.cpp">
+      <Filter>Classes\Example_01 %28배열 리스트%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_02\Example_02.cpp">
+      <Filter>Classes\Example_02 %28연결 리스트%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_04\Example_04.cpp">
+      <Filter>Classes\Example_04 %28큐%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_05\Example_05.cpp">
+      <Filter>Classes\Example_05 %28해시 테이블%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Global\Utility\Structure\CHashTable.inl">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Classes\Global\Utility\Structure\CLinkedList.inl">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </None>
+  </ItemGroup>
+</Project>
