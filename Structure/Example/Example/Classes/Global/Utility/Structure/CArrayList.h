@@ -2,21 +2,19 @@
 
 #include "../../Define/KGDefine.h"
 
-//! 연결 리스트
+//! 배열 리스트
 template <typename T>
-class CLinkedList {
+class CArrayList {
 public:
 
-	//! 노드
-	struct STNode {
-		T m_tValue;
-		STNode *m_pstNextNode;
+	enum {
+		DEF_SIZE = 5
 	};
 
 public:			// operator
 
 	//! operator=
-	CLinkedList<T> & operator=(const CLinkedList<T> &a_rOther);
+	CArrayList<T> & operator=(const CArrayList<T> &a_rOther);
 
 	//! operator[]
 	T & operator[](const int a_nIndex);
@@ -26,14 +24,8 @@ public:			// operator
 
 public:			// public 함수
 
-	//! 포함 여부를 검사한다
-	bool isContains(T a_tValue) const;
-
 	//! 개수를 반환한다
 	int getCount(void) const;
-
-	//! 상태를 리셋한다
-	void reset(void);
 
 	//! 값을 추가한다
 	void addValue(T a_tValue);
@@ -44,32 +36,28 @@ public:			// public 함수
 	//! 값을 제거한다
 	void removeValue(const int a_nIndex);
 
-	//! 값을 제거한다
-	void removeByValue(T a_tValue);
-
 public:			// 생성자, 소멸자
 
 	//! 생성자
-	CLinkedList(void);
+	CArrayList(const int a_nSize = DEF_SIZE);
 
 	//! 복사 생성자
-	CLinkedList(const CLinkedList<T> &a_rOther);
+	CArrayList(const CArrayList<T> &a_rOther);
 
 	//! 소멸자
-	virtual ~CLinkedList(void);
+	virtual ~CArrayList(void);
 
 private:			// private 함수
 
-	//! 이전 노드를 반환한다
-	STNode * getPrevNode(const int a_nIndex);
-
-	//! 노드를 생성한다
-	STNode * createNode(T a_tValue);
+	//! 크기를 변경한다
+	void resize(const int a_nSize);
 
 private:			// private 변수
 
+	int m_nSize = 0;
 	int m_nCount = 0;
-	STNode *m_pstHeadNode = nullptr;
+
+	T *m_ptValues = nullptr;
 };
 
-#include "CLinkedList.inl"
+#include "CArrayList.inl"

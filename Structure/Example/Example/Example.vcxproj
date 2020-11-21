@@ -145,8 +145,11 @@
     <ClInclude Include="Classes\Example_04\Example_04.h" />
     <ClInclude Include="Classes\Example_05\Example_05.h" />
     <ClInclude Include="Classes\Global\Define\KGDefine.h" />
+    <ClInclude Include="Classes\Global\Utility\Structure\CArrayList.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\CHashTable.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\CLinkedList.h" />
+    <ClInclude Include="Classes\Global\Utility\Structure\CQueue.h" />
+    <ClInclude Include="Classes\Global\Utility\Structure\CStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Example.cpp" />
@@ -155,10 +158,13 @@
     <ClCompile Include="Classes\Example_03\Example_03.cpp" />
     <ClCompile Include="Classes\Example_04\Example_04.cpp" />
     <ClCompile Include="Classes\Example_05\Example_05.cpp" />
-    <ClCompile Include="Classes\Global\Utility\Structure\CHashTable.inl" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Classes\Global\Utility\Structure\CArrayList.inl" />
+    <None Include="Classes\Global\Utility\Structure\CHashTable.inl" />
     <None Include="Classes\Global\Utility\Structure\CLinkedList.inl" />
+    <None Include="Classes\Global\Utility\Structure\CQueue.inl" />
+    <None Include="Classes\Global\Utility\Structure\CStack.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,13 +1,28 @@
 #include "Example_03.h"
+#include "../Global/Utility/Structure/CStack.h"
 
 namespace EXAMPLE_03 {
-	void Example_03(const int argc, const char ** args) {
-		int nValueA = 0;
-		int nValueB = 0;
-		int nValueC = 0;
+	//! 스택을 초기화한다
+	void InitStack(CStack<int> &a_rStack, int a_nNumValues) {
+		for(int i = 0; i < a_nNumValues; ++i) {
+			a_rStack.pushValue(i + 1);
+		}
+	}
 
-		printf("ValueA : %p\n", &nValueA);
-		printf("ValueB : %p\n", &nValueB);
-		printf("ValueC : %p\n", &nValueC);
+	//! 스택을 출력한다
+	void PrintStack(CStack<int> &a_rStack) {
+		while(a_rStack.getCount() >= 1) {
+			printf("%d, ", a_rStack.popValue());
+		}
+
+		printf("\n");
+	}
+
+	void Example_03(const int argc, const char ** args) {
+		CStack<int> oStack;
+		InitStack(oStack, 10);
+
+		printf("===== 스택 요소 =====\n");
+		PrintStack(oStack);
 	}
 }
