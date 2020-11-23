@@ -27,12 +27,12 @@ namespace EXAMPLE_02 {
 
 		oValueList.insertValue(0, 100);
 
-		printf("\n===== 데이터 삽입 후 =====\n");
+		printf("\n===== 데이터 삽입 후 요소 =====\n");
 		PrintLinkedList(oValueList);
 
 		oValueList.removeValue(5);
 
-		printf("\n===== 데이터 제거 후 =====\n");
+		printf("\n===== 데이터 제거 후 요소 =====\n");
 		PrintLinkedList(oValueList);
 	}
 }

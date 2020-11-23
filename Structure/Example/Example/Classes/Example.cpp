@@ -3,6 +3,7 @@
 #include "Example_03/Example_03.h"
 #include "Example_04/Example_04.h"
 #include "Example_05/Example_05.h"
+#include "Example_06/Example_06.h"
 
 /*
 * 자료구조란?
@@ -16,7 +17,8 @@ int main(const int argc, const char **args) {
 	//EXAMPLE_02::Example_02(argc, args);
 	//EXAMPLE_03::Example_03(argc, args);
 	//EXAMPLE_04::Example_04(argc, args);
-	EXAMPLE_05::Example_05(argc, args);
+	//EXAMPLE_05::Example_05(argc, args);
+	EXAMPLE_06::Example_06(argc, args);
 
 	return 0;
 }

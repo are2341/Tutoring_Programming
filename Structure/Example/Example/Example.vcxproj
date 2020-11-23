@@ -144,8 +144,10 @@
     <ClInclude Include="Classes\Example_03\Example_03.h" />
     <ClInclude Include="Classes\Example_04\Example_04.h" />
     <ClInclude Include="Classes\Example_05\Example_05.h" />
+    <ClInclude Include="Classes\Example_06\Example_06.h" />
     <ClInclude Include="Classes\Global\Define\KGDefine.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\CArrayList.h" />
+    <ClInclude Include="Classes\Global\Utility\Structure\CBinarySearchTree.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\CHashTable.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\CLinkedList.h" />
     <ClInclude Include="Classes\Global\Utility\Structure\CQueue.h" />
@@ -158,9 +160,11 @@
     <ClCompile Include="Classes\Example_03\Example_03.cpp" />
     <ClCompile Include="Classes\Example_04\Example_04.cpp" />
     <ClCompile Include="Classes\Example_05\Example_05.cpp" />
+    <ClCompile Include="Classes\Example_06\Example_06.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Classes\Global\Utility\Structure\CArrayList.inl" />
+    <None Include="Classes\Global\Utility\Structure\CBinarySearchTree.inl" />
     <None Include="Classes\Global\Utility\Structure\CHashTable.inl" />
     <None Include="Classes\Global\Utility\Structure\CLinkedList.inl" />
     <None Include="Classes\Global\Utility\Structure\CQueue.inl" />
