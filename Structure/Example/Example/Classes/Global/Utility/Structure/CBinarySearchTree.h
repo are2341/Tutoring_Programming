@@ -38,7 +38,7 @@ public:			// public 함수
 	void reset(void);
 
 	//! 값을 추가한다
-	void addValue(T a_tValue, const std::function<bool (T, T)> &a_rCompare);
+	void addValue(T a_tValue);
 
 	//! 값을 제거한다
 	void removeValue(T a_tValue);

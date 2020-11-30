@@ -38,6 +38,12 @@
     <Filter Include="Classes\Example_06 %28이진 탐색 트리%29">
       <UniqueIdentifier>{c67e2931-3c8c-46c9-949f-c824eb41ee74}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Example_07 %28우선 순위 큐%29">
+      <UniqueIdentifier>{514ff0c6-e5e3-4895-85db-86fe47686921}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Example_08 %28그래프%29">
+      <UniqueIdentifier>{72d96e87-708d-4dd6-8ba3-8aa97e5deedb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Classes\Global\Define\KGDefine.h">
@@ -79,6 +85,18 @@
     <ClInclude Include="Classes\Global\Utility\Structure\CBinarySearchTree.h">
       <Filter>Classes\Global\Utility\Structure</Filter>
     </ClInclude>
+    <ClInclude Include="Classes\Example_07\Example_07.h">
+      <Filter>Classes\Example_07 %28우선 순위 큐%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Example_08\Example_08.h">
+      <Filter>Classes\Example_08 %28그래프%29</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Global\Utility\Structure\CPriorityQueue.h">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Global\Utility\Structure\CGraph.h">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Classes\Example.cpp">
@@ -102,6 +120,12 @@
     <ClCompile Include="Classes\Example_06\Example_06.cpp">
       <Filter>Classes\Example_06 %28이진 탐색 트리%29</Filter>
     </ClCompile>
+    <ClCompile Include="Classes\Example_07\Example_07.cpp">
+      <Filter>Classes\Example_07 %28우선 순위 큐%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Example_08\Example_08.cpp">
+      <Filter>Classes\Example_08 %28그래프%29</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Classes\Global\Utility\Structure\CArrayList.inl">
@@ -120,6 +144,12 @@
       <Filter>Classes\Global\Utility\Structure</Filter>
     </None>
     <None Include="Classes\Global\Utility\Structure\CBinarySearchTree.inl">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </None>
+    <None Include="Classes\Global\Utility\Structure\CPriorityQueue.inl">
+      <Filter>Classes\Global\Utility\Structure</Filter>
+    </None>
+    <None Include="Classes\Global\Utility\Structure\CGraph.inl">
       <Filter>Classes\Global\Utility\Structure</Filter>
     </None>
   </ItemGroup>

@@ -11,11 +11,8 @@ namespace EXAMPLE_06 {
 	//! 이진 탐색 트리를 초기화한다
 	void InitBinarySearchTree(CBinarySearchTree<int> &a_rValueList, int a_nNumValues) {
 		for(int i = 0; i < a_nNumValues; ++i) {
-			//int nValue = (rand() % 100) + 1;
-
-			a_rValueList.addValue((i + 5) % a_nNumValues, [=](int a_nLhs, int a_nRhs) -> bool {
-				return a_nLhs < a_nRhs;
-			});
+			int nValue = (rand() % 100) + 1;
+			a_rValueList.addValue(nValue);
 		}
 	}
 

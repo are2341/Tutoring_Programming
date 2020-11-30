@@ -47,6 +47,17 @@ inline T CArrayList<T>::operator[](const int a_nIndex) const {
 }
 
 template<typename T>
+inline bool CArrayList<T>::isContains(T a_tValue) const {
+	for(int i = 0; i < m_nCount; ++i) {
+		if(m_ptValues[i] == a_tValue) {
+			return true;
+		}
+	}
+
+	return false;
+}
+
+template<typename T>
 inline int CArrayList<T>::getCount(void) const {
 	return m_nCount;
 }

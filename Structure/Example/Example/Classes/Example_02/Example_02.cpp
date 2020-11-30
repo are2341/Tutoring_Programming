@@ -10,7 +10,7 @@ namespace EXAMPLE_02 {
 	}
 
 	//! 연결 리스트를 출력한다
-	void PrintLinkedList(const CLinkedList<int> &a_rValueList) {
+	void PrintLinkedList(CLinkedList<int> &a_rValueList) {
 		for(int i = 0; i < a_rValueList.getCount(); ++i) {
 			printf("%d, ", a_rValueList[i]);
 		}

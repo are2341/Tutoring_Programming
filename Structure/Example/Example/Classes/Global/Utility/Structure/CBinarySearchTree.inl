@@ -51,11 +51,11 @@ inline void CBinarySearchTree<T>::reset(void) {
 }
 
 template<typename T>
-inline void CBinarySearchTree<T>::addValue(T a_tValue, const std::function<bool (T, T)> &a_rCompare) {
+inline void CBinarySearchTree<T>::addValue(T a_tValue) {
 	auto pstCurNode = &m_pstRootNode;
 
 	while(*pstCurNode != nullptr) {
-		if(a_rCompare(a_tValue, (*pstCurNode)->m_tValue)) {
+		if(a_tValue < (*pstCurNode)->m_tValue) {
 			pstCurNode = &(*pstCurNode)->m_pstLChildNode;
 		} else {
 			pstCurNode = &(*pstCurNode)->m_pstRChildNode;

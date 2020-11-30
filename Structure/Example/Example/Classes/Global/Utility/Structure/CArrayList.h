@@ -24,6 +24,9 @@ public:			// operator
 
 public:			// public 함수
 
+	//! 포함 여부를 검사한다
+	bool isContains(T a_tValue) const;
+
 	//! 개수를 반환한다
 	int getCount(void) const;
 
